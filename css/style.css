@@ -3,6 +3,7 @@
 
 @charset "UTF-8";
 @import '../css/main.css';
+@import '../css/tag.css';
 
 /* reset */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, section, summary {
@@ -117,3 +118,7 @@ body, html {
 
 .inBlockBox{background-color: #1f8a39;}
 .inBlockBox span{display: inline-block; width: 200px; background-color: #fff;}
+
+table{width: 100%;}
+table th,td{border: 1px solid #000; padding: 10px; box-sizing: border-box;}
+table th{height: 80px; background-color: #f5f5f5;}
