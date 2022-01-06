@@ -1,0 +1,23 @@
+/* 2022-01-06 Discord KSK (코딩하는 사람들의 커뮤니티)
+웹 퍼블리싱 강좌 예제 */
+
+.wrap.main *{font-size: 18px; box-sizing: border-box; text-align: center;}
+
+.wrap.main{display: flex; flex-direction: column; justify-content: center; margin: 0 auto; max-width: 1200px;}
+#header,#nav,.aside,.section,#footer{color: #fff; background-color: #000;}
+.article{color: #000; background-color: #fff;}
+
+#header .inner,#nav .inner,.aside .inner,.section .inner,#footer .inner{padding: 15px;}
+
+#header{margin-bottom: 20px;}
+
+#nav{margin-bottom: 20px;}
+
+.contents{display: flex; justify-content: space-between; margin-bottom: 20px;}
+.contents .section{flex: 0.5; margin: 0 20px;}
+.contents .aside{flex: 0.3;}
+
+.section .inner .article{margin-top: 20px; padding: 20px 0;}
+.section .inner .article span{display: block;}
+
+.aside{display: flex; justify-content: center; align-items: center;}
