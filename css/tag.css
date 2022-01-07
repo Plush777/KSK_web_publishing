@@ -1,8 +1,8 @@
-.wrap.tagIntro .example *{font-size: 20px;}
+.example *{font-size: 20px;}
 .wrap.tagIntro div+div{margin-top: 0;}
-.wrap.tagIntro .boxCont{padding: 50px;}
-.wrap.tagIntro .titleType01,.titleType02,.titleType03{border-bottom: 1px solid #ddd; padding-bottom: 15px; color: #000;}
-.wrap.tagIntro .titleType01{font-size: 32px;}
-.wrap.tagIntro .titleType02{font-size: 28px;}
-.wrap.tagIntro .titleType03{font-size: 24px;}
-.wrap.tagIntro .example{margin-top: 20px;}
+.boxCont{padding: 50px;}
+.titleType01,.titleType02,.titleType03{border-bottom: 1px solid #ddd; padding-bottom: 15px; color: #000;}
+.titleType01{font-size: 32px;}
+.titleType02{font-size: 28px;}
+.titleType03{font-size: 24px;}
+.example{margin-top: 20px;}

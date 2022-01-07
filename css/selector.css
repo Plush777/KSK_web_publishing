@@ -1,0 +1,12 @@
+.wrap.selector .example span{display: block;}
+.wrap.selector .example.type01 *{color: #ff0000;}
+.wrap.selector .example.type02 #text{color: #0000ff;}
+.wrap.selector .example.type03 .pTag{font-size: 40px;}
+.wrap.selector .example.type04 .exCont ul li{color: #008000;}
+.wrap.wrap.selector .example.type05 .exCont>ul>li>a{color: #880080;}
+.wrap.selector .example.type06 .exCont p+.desc{font-size: 50px;}
+.wrap.selector .example.type07 .exCont ~ .exContType02 p{color: #ff4500;}
+.wrap.selector .example.type08 .exCont div[class*=example]{font-weight: bold; color: #ffa500;}
+.wrap.selector .example.type09 .exCont p.boldType.name.bdLine{color: #fff; background-color: #000;}
+.wrap.selector .example.type10 .exCont p,i,a,strong,span,em,div,button,input,textarea{color: #f00 !important;}
+.wrap.selector .example.type10 .exCont :is(p,i,a,strong,span,em,div,button,input,textarea){color: #f00 !important;}

@@ -4,6 +4,7 @@
 @charset "UTF-8";
 @import '../css/main.css';
 @import '../css/tag.css';
+@import '../css/selector.css';
 
 /* reset */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, section, summary {
