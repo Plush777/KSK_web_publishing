@@ -8,5 +8,5 @@
 .wrap.selector .example.type07 .exCont ~ .exContType02 p{color: #ff4500;}
 .wrap.selector .example.type08 .exCont div[class*=example]{font-weight: bold; color: #ffa500;}
 .wrap.selector .example.type09 .exCont p.boldType.name.bdLine{color: #fff; background-color: #000;}
-.wrap.selector .example.type10 .exCont p,i,a,strong,span,em,div,button,input,textarea{color: #f00 !important;}
-.wrap.selector .example.type10 .exCont :is(p,i,a,strong,span,em,div,button,input,textarea){color: #f00 !important;}
+/* .wrap.selector .example.type10 .exCont p,i,a,strong,span,em,div,button,input,textarea{color: #f00 ;}
+.wrap.selector .example.type10 .exCont :is(p,i,a,strong,span,em,div,button,input,textarea){color: #f00 ;} */

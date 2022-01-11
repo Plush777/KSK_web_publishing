@@ -1,0 +1,7 @@
+.wrap.minmax .container{height: 100%; display: flex; align-items: center; justify-content: space-around;}
+.wrap.minmax .container .item .box{padding: 0;}
+.wrap.minmax .container .item .box .inner{width: 100%; height: 100%;}
+.wrap.minmax .container .item .box.minmaxType{min-width: 500px; max-width: 600px; height: 500px; border: 1px solid #000;}
+.wrap.minmax .container .item .box .inner .boxContents{display: flex; align-items: center; justify-content: center;
+width: inherit; height: inherit; font-size: 24px; font-family: '맑은 고딕';}
+.wrap.minmax .container .item .box.paddingType .inner .boxContents{color: #000; background-color: #ddd;}
