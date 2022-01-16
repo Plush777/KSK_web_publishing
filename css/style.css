@@ -1,12 +1,16 @@
+@charset "UTF-8";
 /* 2022-01-06 Discord KSK (코딩하는 사람들의 커뮤니티)
 웹 퍼블리싱 강좌 예제 */
 
-@charset "UTF-8";
 @import '~/../../html/4-1-inlineBlock/css/main.css';
 @import '~/../../html/4-2-tagList/css/tag.css';
 @import '~/../../html/4-3-selector/css/selector.css';
 @import '~/../../html/4-4-cssProperty/boxModel/css/boxModel.css';
 @import '~/../../html/4-4-cssProperty/boxModel/css/minmax.css';
+@import '~/../../html/4-4-cssProperty/textStyle/css/font.css';
+@import '~/../../html/4-4-cssProperty/textStyle/css/textStyle.css';
+@import '~/../../html/4-4-cssProperty/element/css/element.css';
+@import '~/../../html/4-4-cssProperty/etc/01/css/opacity.css';
 
 /* reset */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, section, summary {
@@ -105,6 +109,32 @@ body, html {
 	color: #333;
 	letter-spacing: -0.045em !important;
 }
+
+@font-face {
+	font-family: 'Noto Sans Light';
+	font-style: normal;
+	font-weight: 400;
+	src: url(./font/notoSans/eot/NotoSansKR-Light-Hestia.eot);
+	src: url(./font/notoSans/eot/NotoSansKR-Light-Hestia.eot?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSansKR-Light-Hestia.woff) format("woff");
+  }
+  
+  @font-face {
+	font-family: 'Noto Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(./font/notoSans/eot/NotoSansKR-Regular-Hestia.eot); /* 파일경로 */
+	src: url(./font/notoSans/eot/NotoSansKR-Regular-Hestia.eot?#iefix) format("embedded-opentype"), /* ie8 폰트버그 fix */
+	url(./font/notoSans/woff/NotoSansKR-Regular-Hestia.woff) format("woff"); 
+	/* 브라우저마다 지원하는 폰트 확장이 다르기때문에 eot , woff 둘다 써주기 */
+  }
+  
+  @font-face {
+	font-family: 'Noto Sans Medium';
+	font-style: normal;
+	font-weight: 400;
+	src: url(./font/notoSans/eot/NotoSansKR-Medium-Hestia.eot);
+	src: url(./font/notoSans/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format("embedded-opentype"), url(./font/notoSans/woff/NotoSansKR-Medium-Hestia.woff) format("woff");
+  }
 
 .wrap{width: 100%; height: 100%;}
 .wrap div+div{margin-top: 50px;}

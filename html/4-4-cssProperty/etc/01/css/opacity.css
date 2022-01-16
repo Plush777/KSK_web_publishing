@@ -1,0 +1,32 @@
+.wrap.opa{max-width: 1200px; margin: 0 auto;}
+.wrap.opa .container .head{padding: 20px 0 10px 0; font-size: 24px; border-bottom: 1px solid #ddd; font-family: 'Noto Sans';}
+.wrap.opa .container .cont{margin-top: 20px; font-size: 20px; font-family: 'Noto Sans';}
+.wrap.opa .container .cont .opaBox{display: flex; align-items: center; justify-content: center; width: 200px; 
+height: 200px; border: 5px solid #f00; color: #f00; background-color: #000; opacity: 0.5;}
+.wrap.opa .container .cont .opaBox02{display: flex; align-items: center; justify-content: center; width: 200px; 
+height: 200px; border: 5px solid #f00; color: #f00; background-color: rgba(0, 0, 0, 0.5);}
+.wrap.opa .ex .cont.flex{display: flex; column-gap: 10px;}
+.wrap.opa .ex .cont .verticalBox img{vertical-align: middle;}
+.wrap.opa .ex .cont .verticalBox span{vertical-align: middle;}
+.wrap.opa .ex .cont .overflowBox{width: 300px; height: 300px; border: 1px solid #000; overflow: hidden;}
+.wrap.opa .ex .cont .overflowBox.hidden{overflow: hidden;}
+.wrap.opa .ex .cont .overflowBox.scroll{overflow: scroll;}
+.wrap.opa .ex .cont .overflowBox.over-x{overflow-x: scroll;}
+.wrap.opa .ex .cont .overflowBox.over-y{overflow-y: scroll;}
+.wrap.opa .ex .cont .overflowBox.over-y-auto{overflow-y: auto;}
+.wrap.opa .ex .cont .overflowBox .overflowItem{width: inherit; height: 400px; background-color: #ddd;}
+.wrap.opa .ex .cont .transitionBox{display: flex; flex-direction: column; row-gap: 20px; width: 100%; height: 500px; border: 1px solid #000;
+padding: 20px; box-sizing: border-box;}
+.wrap.opa .ex .cont .transitionBox .bar{width: 100px; height: 50px; color: #fff; font-size: 14px; background-color: #000; /*transition: .5s;*/
+transition-property: width; transition-duration: .5s; transition-timing-function: ease; transition-delay: 1s;}
+.wrap.opa .ex .cont .transitionBox .bar.easeIn{transition-delay: 0s; transition-timing-function: ease-in;}
+.wrap.opa .ex .cont .transitionBox .bar.easeInOut{transition-delay: 0s; transition-timing-function: ease-in-out;}
+.wrap.opa .ex .cont .transitionBox .bar.linear{transition-delay: 0s; transition-timing-function: linear;}
+.wrap.opa .ex .cont .transitionBox .bar.easeOut{transition-delay: 0s; transition-timing-function: ease-out;}
+.wrap.opa .ex .cont .transitionBox .bar:hover{width: 200px;}
+.wrap.opa .ex .cont .visbillty,.none{display: flex; align-items: center; justify-content: center; width: 200px; 
+height: 200px; color: #fff; background-color: #000;}
+
+.wrap.opa .ex .cont .visbillty.hd{visibility: hidden;}
+.wrap.opa .ex .cont .none.dn{display: none;}
+.wrap.opa div+div{margin-top: 0;}

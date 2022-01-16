@@ -1,0 +1,12 @@
+.wrap.txt{max-width: 1200px; margin: 0 auto;}
+.wrap.txt .container .head{padding: 20px 0 10px 0; font-size: 24px; border-bottom: 1px solid #ddd; font-family: 'Noto Sans';}
+.wrap.txt .container .cont{margin-top: 20px; font-size: 20px; font-family: 'Noto Sans';}
+.wrap.txt .container .cont p.txtCenter{text-align:center;}
+.wrap.txt .container .cont p.lh{line-height: 50px;}
+.wrap.txt .container .cont p.blue{color: rgb(4, 0, 255);}
+.wrap.txt .container .cont p.red{color: #f00;}
+.wrap.txt .container .cont p.purple{color: rgb(140, 0, 255);}
+.wrap.txt .container .cont p.letter{letter-spacing: 5px;}
+.wrap.txt .container .cont p.ep{width: 800px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.wrap.txt .container .ex+.ex{margin-top: 50px;}
+.wrap.txt div+div{margin-top: 0;}
