@@ -1,6 +1,3 @@
-.wrap.fs{max-width: 1200px; margin: 0 auto;}
-.wrap.fs .container .head{padding: 20px 0 10px 0; font-size: 24px; border-bottom: 1px solid #ddd; font-family: 'Noto Sans';}
-.wrap.fs .container .cont{margin-top: 20px; font-size: 20px; font-family: 'Noto Sans';}
 .wrap.fs .container .cont p.fz16{font-size: 16px;}
 .wrap.fs .container .cont p.fz24{font-size: 24px;}
 .wrap.fs .container .cont p.fz32{font-size: 32px;}
@@ -17,6 +14,3 @@
 .wrap.fs .container .cont p.fw7{font-weight: 700;}
 .wrap.fs .container .cont p.fw8{font-weight: 800;}
 .wrap.fs .container .cont p.fw9{font-weight: 900;}
-
-.wrap.fs .container .ex+.ex{margin-top: 50px;}
-.wrap.fs div+div{margin-top: 0;}

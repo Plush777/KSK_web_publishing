@@ -1,6 +1,3 @@
-/* 2022-01-06 Discord KSK (코딩하는 사람들의 커뮤니티)
-웹 퍼블리싱 강좌 예제 */
-
 .wrap.main *{font-size: 18px; box-sizing: border-box; text-align: center;}
 
 .wrap.main{display: flex; flex-direction: column; justify-content: center; margin: 0 auto; max-width: 1200px;}

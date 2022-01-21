@@ -1,5 +1,4 @@
 .example *{font-size: 20px;}
-.wrap.tagIntro div+div{margin-top: 0;}
 .boxCont{padding: 50px;}
 .titleType01,.titleType02,.titleType03{border-bottom: 1px solid #ddd; padding-bottom: 15px; color: #000;}
 .titleType01{font-size: 32px;}
