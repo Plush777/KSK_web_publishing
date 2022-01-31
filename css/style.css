@@ -12,6 +12,8 @@
 @import '~/../../html/4-4-cssProperty/element/css/element.css';
 @import '~/../../html/4-4-cssProperty/etc/01/css/opacity.css';
 @import '~/../../html/4-4-cssProperty/flex/css/flex.css';
+@import '~/../../html/4-5-pseudo/css/pseudo.css';
+@import '~/../../html/4-6-position/css/position.css';
 
 /* reset */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, section, summary {

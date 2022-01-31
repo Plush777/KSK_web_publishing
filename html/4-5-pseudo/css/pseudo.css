@@ -1,0 +1,29 @@
+.wrap.pse .cont > a:active{color: #0000ff;}
+.wrap.pse .cont > input[type="text"].focus:focus{background-color: #ffff00;}
+.wrap.pse .cont > input[type="text"].disabled:disabled{color: inherit; border: 1px solid #000; background-color: #ddd; opacity: 0.8;}
+.wrap.pse .cont .hoverBox{width: 200px; height: 200px; background-color: #000;}
+.wrap.pse .cont .hoverBox.soft{display: flex; align-items: center; justify-content: center; color: #fff; transition: .5s;}
+.wrap.pse .cont .hoverBox+.hoverBox{margin-top: 10px;}
+.wrap.pse .cont .hoverBox:hover{background-color: #0000ff;}
+.wrap.pse .cont .hoverBox.soft:hover{background-color: #0000ff;}
+.wrap.pse .cont input[type="checkbox"]:checked{margin: 0;}
+.wrap.pse .cont .indexWrap.first p:nth-child(2){color: #0000ff;}
+.wrap.pse .cont .indexWrap.first p:first-of-type{color: #0000ff;}
+.wrap.pse .cont .indexWrap.last p:last-child{color: #0000ff;}
+.wrap.pse .cont .indexWrap.nth p:nth-child(3){color: #0000ff;}
+.wrap.pse .cont .txtDiv{margin-bottom: 60px; color: #141414; font-size: 16px;}
+.wrap.pse .cont .indexWrap.not p:not(span){color: #ff0000;}
+.wrap.pse .cont .pseArea+.pseArea{margin-top: 50px;}
+.wrap.pse .cont a.before:before{content: ''; display: inline-block; width: 24px; height: 24px; margin-right: 5px;
+vertical-align: sub; background: url("../images/home.png")no-repeat center;}
+.wrap.pse .cont a.after:after{content: '👍';}
+
+/* :is 우선순위가 더 높아서 16번째줄을 무시하고 색상이 초록색으로 됨. */
+.wrap.pse .cont .pseArea.is p{color: #0000ff;}
+.wrap.pse .cont .pseArea.is :where(p,span,strong,em){display: block; color: #ff0000;}
+.wrap.pse .cont .pseArea.is :is(p,span,strong,em){display: block; color: #008000;}
+
+
+/* :where은 우선순위가 0 (낮음) 이기 때문에 20번째줄 코드가 먹혀서 색상이 파란색으로 됨. */
+.wrap.pse .cont .pseArea.where p{color: #0000ff;}
+.wrap.pse .cont .pseArea.where :where(p,span,strong,em){display: block; color: #ff0000;}

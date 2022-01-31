@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css" type="text/css">
+    <title>가상 클래스</title>
+</head>
+<body>
+    <!-- class 또는 id -->
+    <div class="wrap pse wd1200 mt0"> 
+        <div class="container">
+            <div class="ex">
+                <div class="head">
+                    <p>:before</p>
+                </div>
+                <div class="cont">
+                    <a href="#none" class="before">홈으로 가기</a>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>:after</p>
+                </div>
+                <div class="cont">
+                    <a href="#none" class="after">after</a>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>:active</p>
+                </div>
+                <div class="cont">
+                    <a href="#none" class="active">클릭해보세요!</a>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>:focus</p>
+                </div>
+                <div class="cont">
+                    <input type="text" class="focus">
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>:disabled</p>
+                </div>
+                <div class="cont">
+                    <input type="text" class="disabled" disabled>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>:hover</p>
+                </div>
+                <div class="cont">
+                    <div class="hoverBox"></div>
+                    <div class="hoverBox soft">
+                        <span>부드러운 hover</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>:checked</p>
+                </div>
+                <div class="cont">
+                    <div>
+                        <input type="checkbox" id="chk01">
+                        <label for="chk01" style="font-size: 14px;">체크되지않음</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="chk02" checked>
+                        <label for="chk02" style="font-size: 14px;">체크됨</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>:first-child vs :first-of-type</p>
+                </div>
+                <div class="cont">
+                    <div class="txtDiv">
+                        <p>first-child : 형제요소 중에서 첫번째 요소</p>
+                        <p>first-of-type : 형제요소 중에서 <strong>같은 태그를 가진 기준으로</strong> 첫번째 요소 </p>
+                    </div>
+                    <div class="indexWrap first">
+                        <span>span txt</span> 
+                        <p>p txt</p>
+                        <p>p txt02</p>
+                        <span>span txt2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>:last-child</p>
+                </div>
+                <div class="cont">
+                    <div class="indexWrap last">
+                        <p>p txt</p>
+                        <p>p txt02</p>
+                        <p>p txt03</p>
+                        <p>p txt04</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>:nth-child</p>
+                </div>
+                <div class="cont">
+                    <div class="indexWrap nth">
+                        <p>p txt</p>
+                        <p>p txt02</p>
+                        <p>p txt03</p>
+                        <p>p txt04</p>
+                        <p>p txt05</p>
+                        <p>p txt06</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>:is & :where</p>
+                </div>
+                <div class="cont">
+                    <div class="pseArea is">
+                        <p>p txt</p>
+                        <span>span txt</span>
+                        <strong>strong txt</strong>
+                        <em>em txt</em>
+                    </div>
+                    <div class="pseArea where">
+                        <p>p txt (where)</p>
+                        <span>span txt(where)</span>
+                        <strong>strong txt(where)</strong>
+                        <em>em txt(where)</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

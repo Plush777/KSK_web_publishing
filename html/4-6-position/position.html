@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css" type="text/css">
+    <title></title>
+</head>
+<body>
+    <!-- class 또는 id -->
+    <div class="wrap pos wd1200 mt0" style="height: 5000px;"> 
+        <div class="container">
+            <div class="ex">
+                <div class="head">
+                    <p>static</p>
+                </div>
+                <div class="cont">
+                    <div class="box default">
+                        <span>static</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>relative</p>
+                </div>
+                <div class="cont">
+                    <div class="box default" style="position: relative; top:100px;">
+                        <span>A</span>
+                    </div>
+                    <div class="box default" style="position: relative;">
+                        <span>B</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>absolute</p>
+                </div>
+                <div class="cont">
+                    <div class="boxContainer" style="position: relative;">
+                        <div class="box default" style="position: absolute; right: 0;">
+                            <span>absolute</span>
+                        </div>
+                    </div>
+
+                    <div class="boxContainer">
+                        <div class="box default" style="position: absolute; right: 0;">
+                            <span>absolute</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>fixed</p>
+                </div>
+                <div class="cont">
+                    <div class="box default" style="position: fixed; top:0; left: 600px; background-color: #ff0000; z-index: 9999;">
+                        <span>Fixed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>sticky</p>
+                </div>
+                <div class="cont" style="height: 1500px; background-color: #ddd;">
+                    <div class="box default" style="position: sticky; top: 0;">
+                        <span>sticky</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
