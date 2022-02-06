@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./css/default.css" type="text/css"/>
+    <title>웹표준 및 접근성</title>
+    <style>
+        #skip-nav{
+            position: relative;
+            z-index: 9999;
+        }
+
+        #skip-nav a{
+            position: absolute; 
+            top: -200px; 
+            left:0;
+            width: 100%;
+            line-height: 30px; 
+            text-align: center;
+            color: #fff;
+            background-color: #5b5bfd;
+        }
+
+        #skip-nav a:focus , a:active{
+            top: 0;
+        }
+
+        .table th,td{border: 1px solid #000;}
+    </style>
+</head>
+<body>
+    <div id="skip-nav">
+        <a href="#imgAltArea">img 대체 텍스트 부분으로 가기</a>
+        <a href="#noscriptArea">noscript 부분으로 가기</a>
+    </div>
+
+    <!-- class 또는 id -->
+    <div class="wrap web wd1200 mt0">
+        <div class="container">
+            <div class="ex" id="imgAltArea">
+                <div class="head">
+                    <p>img 대체 텍스트</p>
+                </div>
+                <div class="cont">
+                    <img src="../../images/150x1.png" alt="이미지 대체텍스트"/>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>button</p>
+                </div>
+                <div class="cont">
+                    <button tabindex="4">버튼?</button>
+                    <button type="button" tabindex="3">일반 버튼</button>
+                    <button type="reset" tabindex="2">리셋 버튼</button>
+                    <button type="submit" tabindex="1">제출 버튼</button>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>input label</p>
+                </div>
+                <div class="cont">
+                    <div>
+                        <label for="i01">라벨</label>
+                        <input type="text" id="i01"/>
+                    </div>
+                    
+                    <div>
+                        <label for="s01">라벨</label>
+                        <select id="s01">
+                            <option>옵션1</option>
+                            <option>옵션2</option>
+                            <option>옵션3</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="chk01">라벨</label>
+                        <input type="checkbox" id="chk01"/>
+                    </div>
+
+                    <div>
+                        <label for="rd01">라벨</label>
+                        <input type="radio" name="radio" id="rd01"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>hidden 요소</p>
+                </div>
+                <div class="cont">
+                    <span class="hidden">숨겨진 텍스트</span>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>title</p>
+                </div>
+                <div class="cont">
+                    <span title="이것은 타이틀!">타이틀 속성이 있는 텍스트</span>
+                </div>
+            </div>
+
+            <div class="ex">
+                <div class="head">
+                    <p>table</p>
+                </div>
+                <div class="cont">
+                    <div class="table">
+                        <table>
+                            <!-- 무조건 table 태그에서 첫번째 -->
+                            <caption class="hidden">table caption 예제</caption> 
+                            <thead>
+                                <tr>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">제목</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>내용</td>
+                                    <td>내용</td>
+                                    <td rowspan="2" colspan="2">내용</td>
+                                </tr>
+                                <tr>
+                                    <td>내용</td>
+                                    <td>내용</td>
+                                </tr>
+                                <tr>
+                                    <td>내용</td>
+                                    <td>내용</td>
+                                    <td rowspan="2" colspan="2">내용</td>
+                                </tr>
+                                <tr>
+                                    <td>내용</td>
+                                    <td>내용</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ex" id="noscriptArea">
+                <div class="head">
+                    <p>noscript</p>
+                </div>
+                <div class="cont">
+                    <button onclick="window.open('/html/4-6-position/position.html','_blank');">position.html로 이동</button>
+                    <noscript>
+                        <p>자바스크립트를 허용하셔야 해당 링크로 이동됩니다.</p>
+                    </noscript>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
