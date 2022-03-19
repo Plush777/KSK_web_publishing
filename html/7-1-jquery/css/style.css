@@ -1,0 +1,14 @@
+.wrap.jquery .container{position: relative; height: 100%; display: flex; align-items: center; justify-content: center; padding: 0;}
+.wrap.jquery .btnOpen{width: 200px; height: 55px; font-size: 18px; font-family: 'Noto Sans'; color: #fff; 
+background-color: #000;}
+.wrap.jquery #popup{display: none; position: absolute; width: 400px; border-radius: 4px;
+background-color: #fff; z-index: 200; text-align: center;}
+.wrap.jquery #popup .headArea{position: relative; padding-top: 15px; font-size: 22px; font-family: 'Noto Sans'; color: #000;}
+.wrap.jquery #popup .contArea{padding: 5px 15px 15px 15px; box-sizing: border-box; font-size: 14px; 
+font-family: 'Noto Sans'; color: #333;}
+.wrap.jquery #popup .btnArea{display: flex; align-items: center;height: 48px; border-top: 1px solid #ddd;}
+.wrap.jquery #popup .btnArea button{flex: 0.5; height: 100%; font-size: 16px; font-family: 'Noto Sans'; color: #2282F8;
+border-right: 1px solid #ddd;}
+.wrap.jquery #popup .btnArea button:last-child{border-right: 0;}
+#dimmed{position: absolute; width: 100%; height: 100%; background-color: rgba(0,0,0,.65); z-index: 100;}
+.wrap.jquery .btnClose{position: absolute; right: 0; top: 0; width: 30px;}

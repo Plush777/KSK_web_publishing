@@ -16,6 +16,7 @@
 @import '~/../../html/4-6-position/css/position.css';
 @import '~/../../html/6-1-responsive/css/media.css';
 @import '~/../../html/6-1-responsive/css/main.css';
+@import '~/../../html/7-1-jquery/css/style.css';
 
 /* reset */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, section, summary {
