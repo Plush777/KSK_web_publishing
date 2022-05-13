@@ -18,6 +18,9 @@
 @import '~/../../html/6-1-responsive/css/main.css';
 @import '~/../../html/7-1-jquery/css/style.css';
 
+/* 2022-05-12 심화 예제 */
+@import '~/../../s02/WAI-aria/css/aria.css';
+
 /* reset */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, section, summary {
 	margin: 0;
