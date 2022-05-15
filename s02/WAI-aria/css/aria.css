@@ -49,3 +49,356 @@
     border-left: 0;
 }
 
+.tabWrapper .tabNav{
+    border-bottom: 1px solid #ddd;
+}
+
+.tabWrapper .tabNav .tabList{
+    display: flex;
+    align-items: center;
+}
+
+.tabWrapper .tabNav .tabList li{
+    position: relative;
+    display: inherit;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+}
+
+.tabWrapper .tabNav .tabList li.active:before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 3px;
+    z-index: 100;
+}
+
+.tabWrapper .tabNav .tabList li.ft.active:before{
+    background-color: #F06126;
+}
+
+.tabWrapper .tabNav .tabList li.se.active:before{
+    background-color: #2996CF;
+}
+
+.tabWrapper .tabNav .tabList li.th.active:before{
+    background-color: #F7E018;
+}
+
+.tabWrapper .tabNav .tabList li.ft.active a{
+    color: #F06126;
+}
+
+.tabWrapper .tabNav .tabList li.se.active a{
+    color: #2996CF;
+}
+
+.tabWrapper .tabNav .tabList li.th.active a{
+    color: #F7E018;
+}
+
+.tabWrapper .tabNav .tabList li a{
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.tabWrapper .tabCont{
+    display: none;
+    padding-top: 60px;
+}
+
+.tabWrapper .tabCont.active{
+    display: block;
+}
+
+.cardWrapper{
+    display: grid;
+    grid-template-columns: repeat(3,386.67px);
+    gap: 20px;
+}
+
+.cardWrapper .cardArea{
+    box-shadow: rgb(0 0 0 / 4%) 0px 4px 16px 0px;
+}
+
+.cardWrapper .cardArea .cardHead{
+    width: 100%;
+    height: 160px;
+}
+
+.cardWrapper .cardArea .cardHead .imgArea{
+    height: 100%;
+    border-radius: 12px 12px 0 0;
+    background-color: #dee2e6;
+}
+
+.cardWrapper .cardArea .cardHead .imgArea a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cardWrapper .cardArea .cardDesc{
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.cardWrapper .cardArea .cardDesc>.inner{
+    height: 170px;
+    padding: 14px 18px;
+    box-sizing: border-box;
+}
+
+.cardWrapper .cardArea .cardDesc>.inner a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cardWrapper .cardArea .cardDesc>.inner a .row+.row{
+    margin-top: 8px;
+}
+
+.cardWrapper .cardArea .cardDesc>.inner a .tit{
+    width: 100%;
+    height: 14px;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+.cardWrapper .cardArea .cardDesc>.inner a .desc{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cardWrapper .cardArea .cardBottom{
+    border-radius: 0 0 12px 12px;
+    background-color: #fff;
+}
+
+.cardWrapper .cardArea .cardBottom>.inner{
+    height: 50px;
+    padding: 14px 18px;
+    box-sizing: border-box;
+}
+
+.cardWrapper .cardArea .cardBottom>.inner .userBox{
+    display: flex;
+    align-items: center;
+}
+
+.cardWrapper .cardArea .cardBottom>.inner .userBox .userInfo{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.cardWrapper .cardArea .cardBottom>.inner .userBox .userName{
+   min-width: 150px;
+   height: 14px;
+   border-radius: 4px;
+   background-color: #eee;
+}
+
+.skelPiece{
+    height: 14px;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+.skelPiece:last-child{
+    flex: 1;
+}
+
+.skelPiece.none{
+    flex: none;
+}
+
+.skelPiece.wd30{
+    width: 30px;
+}
+
+.skelPiece.wd40{
+    width: 40px;
+}
+
+.skelPiece.wd50{
+    width: 50px;
+}
+
+.skelPiece.wd60{
+    width: 60px;
+}
+
+.skelPiece.wd70{
+    width: 70px;
+}
+
+.skelPiece.wd80{
+    width: 80px;
+}
+
+.btnArea{
+    display: flex;
+    align-items: center;
+}
+
+.btnArea .btnBlue{
+    min-width: 82px;
+    height: 38px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #0b5ed7;
+}
+
+.btnArea .toggleDarkMode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 148px;
+    height: 50px;
+    border-radius: 24px;
+    background-color: #f7f7f7;
+}
+
+.btnArea .toggleDarkMode span{
+    font-size: 16px;
+}
+
+.btnArea .toggleDarkMode.active{
+    color: #fff;
+    background-color: #404040;
+}
+
+.btnArea .toggleDarkMode.active svg{
+   fill: #fff;
+}
+
+.btnArea button+button{
+    margin-left: 10px;
+}
+
+.checkbox input[type="checkbox"]{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    visibility: visible;
+    position: absolute;
+}
+
+.checkbox label{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label span{
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.checkbox label:before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.checkbox label .checkboxShape{
+    position: absolute;
+    left: 1.5px;
+    top: 3.5px;
+}
+
+.checkbox label .checkboxShape > path{
+   stroke: none;
+   fill: none;
+}
+
+.checkbox input[type="checkbox"]:checked + label .checkboxShape>path{
+    stroke: #000;
+    fill: #000;
+}
+
+.checkbox + .checkbox {
+    margin-left: 10px;
+}
+
+.radioWrapper{
+    display: inline-block;
+}
+
+.radioWrapper input[type="radio"]{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    visibility: visible;
+    position: absolute;
+}
+
+.radioWrapper ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radioWrapper ul li .radio label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radioWrapper ul li .radio label span{
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.radioWrapper ul li .radio label:before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.radioWrapper ul li .radio label .radioShape{
+    position: absolute;
+    left: 4.3px;
+    top: 6.5px;
+}
+
+.radioWrapper ul li .radio label .radioShape circle{
+    fill: none;
+}
+
+.radioWrapper ul li .radio input[type="radio"]:checked + label .radioShape > circle{
+    fill: #353990;
+}
+
+.radioWrapper ul li .radio input[type="radio"]:checked + label:before{
+    border-color: #353990;
+}
